@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* =========================
+   PC用
+========================= */
+/* ページタイトル */
+.page-title{
+  text-align:center;
+  padding:60px 20px 20px;
+}
+
+.page-title h1{
+  font-size:48px;
+  margin:0;
+  font-weight:700;
+  letter-spacing:0.05em;
+}
+
+/* h4見出し（「自己紹介」「使用可能ツール」「資格」など） */
+.profile-text h4,
+.text h4{
+  font-size:28px;
+  margin-top:50px;
+  margin-bottom:20px;
+
+  padding-left:15px;
+
+  border-left:5px solid #FF8E98;
+}
+
+/* スキルリスト */
+.skill-list{
+  margin:0 0 30px;
+  padding-left:25px;
+}
+
+.skill-list li{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+/* プロフィール名前 */
+.profile-content h3{
+  font-size:72px;
+  margin:0;
+  border-bottom:3px solid #000;
+  display:inline-block;
+}
+
+/* 名前ふりがな */
+.profile-content .kana{
+  font-size:24px;
+}
+
+/* プロフィール本文 */
+.profile-text{
+  margin-top:30px;
+}
+
+.profile-text p{
+  margin-bottom:20px;
+}
+
+/* プロフィール画像 */
+.imgbox img{
+  width:180px;
+  height:180px;
+
+  border-radius:50%;
+  border:4px solid #000;
+
+  object-fit:cover;
+}
+
+.name-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:60px;
+
+  margin-bottom:40px;
+}
+
+/* SNS見出し */
+.text h4:last-of-type{
+  margin-top:40px;
+}
+
+/* メールリンク */
+#footer a[href^="mailto"]{
+  font-weight:600;
+  color:#FF8E98;
+}
+
+#footer a[href^="mailto"]:hover{
+  color:#ff7482;
+}
+
+/* プロフィール カード型 */
+.profile-content{
+  background:#ffffff;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:768px){
+
+  .name-row{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .profile-content h3{
+    font-size:36px;
+  }
+
+  .section-title,
+  .page-title h1{
+    font-size:36px;
+  }
+
+  .profile-content .text,
+  .skill-list li{
+    font-size:18px;
+  }
+
+  .imgbox img{
+    width:100px;
+    height:100px;
+  }
+
+}
+/* =========================
+   PC用ここまで
+========================= */

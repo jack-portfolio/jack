@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>ポートフォリオ | jack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+      <div class="container">
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        <nav class="globalnav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="profile.html">プロフィール</a></li>
+            <li><a href="work.html">作品(WEBサイト)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+        <div id="mainvisual">
+          <img src="images/header.png" alt="ヘッダー">
+        </div>
+    <!-- ヘッダーここまで -->
+
+  <!-- メイン -->
+  <main>
+    <section id="profile" class="wrapper">
+      <h2 class="section-title">プロフィール</h2>
+  
+      <div class="profile-content">
+
+        <div class="text">
+
+          <div class="name-row">
+            <div class="name-group">
+              <h3>jack</h3>
+              <span class="kana">ジャック</span>
+            </div>
+
+            <div class="imgbox">
+              <img src="images/アイコン.png" alt="プロフィール画像" class="circle">
+            </div>
+          </div>
+          
+          <div class="intro-box">
+            <p>はじめまして、ジャックです！</p>
+            <p>このサイトは、PhotoshopやIllustratorなどの制作した作品をまとめています。</p>
+            <p>気になった方は、ぜひご覧ください！</p>
+            <p>※作品の無断転載・無断使用はお控えください。</p>
+          </div>
+
+          <div class="profile-text">
+            <a href="profile.html" class="profile-btn">
+              プロフィールの詳細はこちらから ▶︎
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+        <section id="work" class="wrapper">
+          <h2 class="work">
+            <a href="work.html" target="_blank" rel="noopener noreferrer" class="work1-btn">
+              作品-WEBサイト-
+            </a>
+          </h2>
+          <div>
+            <img src="images/work.png" alt="WEBサイトまとめ">
+          </div>
+        </section>
+  
+        <section id="Work-Skill" class="wrapper">
+          <h2 class="Work-Skill">
+            <a href="https://www.foriio.com/jack555enjoy" target="_blank" rel="noopener noreferrer" class="work2-btn">
+              作品-スキル-
+            </a>
+          </h2>
+          <div>
+            <img src="images/Work-Skill.png" alt="作品-スキル">
+          </div>
+        </section>
+  
+        <section id="LINE_stamp" class="wrapper">
+          <h2 class="LINE_stamp">
+            <a href="https://store.line.me/stickershop/author/4168925/ja" target="_blank" rel="noopener noreferrer" class="work3-btn">
+              作品-LINEスタンプ-
+            </a>
+          </h2>
+          <div>
+            <img src="images/LINE_stamp.png" alt="作品-スキル">
+          </div>
+        </section>
+
+  </main>
+      <!-- メインここまで -->
+
+      <!-- フッター -->
+      <footer id="footer">
+        <p>&copy; 2026-portfolio.jack</p>
+
+        <p> お問い合わせはメールまで<br>
+          <a href="mailto:jack555enjoy@gmail.com">
+            mail：jack555enjoy@gmail.com
+          </a>
+        </p>
+
+        <!-- SNSアイコン -->
+        <div class="footer-sns-icons">
+          <a href="https://x.com/jack5enjoy" target="_blank" rel="noopener noreferrer">
+            <img src="images/x-logo/logo-white.png" alt="X">
+          </a>
+
+          <a href="https://note.com/jack5enjoy" target="_blank" rel="noopener noreferrer">
+            <img src="images/note_logo.png" alt="note">
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCQaQbc-1xupUqhJVbFiuDqg" target="_blank" rel="noopener noreferrer">
+            <img src="images/youtube_logo.png" alt="youtube">
+          </a>
+        </div>
+      </footer>
+      <!-- フッターここまで -->
+
+      <!-- 上へ戻るボタン -->
+      <a href="#" class="back-to-top">↑</a>
+      
+    <!-- ハンバーガーメニュー -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".globalnav");
+      const body = document.body;
+      const navLinks = document.querySelectorAll(".globalnav a");
+    
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          nav.classList.toggle("active");
+          body.classList.toggle("menu-open");
+        });
+    
+        /* メニューリンクを押したら閉じる */
+        navLinks.forEach(link => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav.classList.remove("active");
+            body.classList.remove("menu-open");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

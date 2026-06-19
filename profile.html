@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>プロフィール | jack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+      <div class="container">
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        <nav class="globalnav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="profile.html">プロフィール</a></li>
+            <li><a href="work.html">作品(WEBサイト)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="mainvisual">
+      <img src="images/profile.png" alt="ヘッダー">
+    </div>
+
+    <section class="page-title">
+      <h2 class="section-title">プロフィール</h2>
+    </section>
+    <!-- ヘッダーここまで -->
+
+  <!-- メイン -->
+  <main>
+    <section id="profile" class="wrapper">
+  
+      <div class="profile-content">
+
+        <div class="text">
+
+          <div class="name-row">
+            <div class="name-group">
+              <h3>jack</h3>
+              <span class="kana">ジャック</span>
+            </div>
+
+            <div class="imgbox">
+              <img src="images/アイコン.png" alt="プロフィール画像" class="circle">
+            </div>
+          </div>
+          
+          <div class="profile-text">
+
+            <h4>自己紹介</h4>
+            <p>はじめまして、ジャックです！</p>
+          
+            <p>Webデザインやグラフィックデザインを中心に学習・制作活動を行っています。</p>
+          
+            <p>Photoshop（エキスパート）およびIllustrator（スタンダード）の資格を取得し、バナーやチラシ、名刺などを制作しています。</p>
+          
+            <p>また、Figmaを活用したWebデザインにも取り組んでいます。シンプルで見やすく、目的が伝わるデザインを心掛けています。</p>
+          
+          </div>
+              
+          <h4>使用可能ツール</h4>
+          <ul class="skill-list">
+            <li>Figma</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>ChatGPT</li>
+          </ul>
+
+          <h4>デザインツール</h4>
+          <ul class="skill-list">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+          </ul>
+
+          <h4>資格</h4>
+          <ul class="skill-list">
+            <li>Photoshop クリエイター能力認定試験 エキスパート</li>
+            <li>Illustrator クリエイター能力認定試験 スタンダード</li>
+          </ul>
+          
+          <h4>SNS</h4>
+          <!-- SNSアイコン -->
+          <div class="sns-icons">
+            <a href="https://x.com/jack5enjoy" target="_blank" rel="noopener noreferrer">
+              <img src="images/x-logo/logo-white.png" alt="X">
+            </a>
+  
+            <a href="https://note.com/jack5enjoy" target="_blank" rel="noopener noreferrer">
+              <img src="images/note_logo.png" alt="note">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCQaQbc-1xupUqhJVbFiuDqg" target="_blank" rel="noopener noreferrer">
+              <img src="images/youtube_logo.png" alt="youtube">
+            </a>
+          </div>
+          <!-- SNSアイコン ここまで -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+      <!-- メインここまで -->
+
+      <!-- フッター -->
+      <footer id="footer">
+        <p>&copy; 2026-portfolio.jack</p>
+
+        <p> お問い合わせはメールまで<br>
+          <a href="mailto:jack555enjoy@gmail.com">
+            mail：jack555enjoy@gmail.com
+          </a>
+        </p>
+
+        <!-- SNSアイコン -->
+        <div class="footer-sns-icons">
+          <a href="https://x.com/jack5enjoy" target="_blank" rel="noopener noreferrer">
+            <img src="images/x-logo/logo-white.png" alt="X">
+          </a>
+
+          <a href="https://note.com/jack5enjoy" target="_blank" rel="noopener noreferrer">
+            <img src="images/note_logo.png" alt="note">
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCQaQbc-1xupUqhJVbFiuDqg" target="_blank" rel="noopener noreferrer">
+            <img src="images/youtube_logo.png" alt="youtube">
+          </a>
+        </div>
+      </footer>
+      <!-- フッターここまで -->
+
+      <!-- 上へ戻るボタン -->
+      <a href="#" class="back-to-top">↑</a>
+      
+    <!-- ハンバーガーメニュー -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".globalnav");
+      const body = document.body;
+      const navLinks = document.querySelectorAll(".globalnav a");
+    
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          nav.classList.toggle("active");
+          body.classList.toggle("menu-open");
+        });
+    
+        /* メニューリンクを押したら閉じる */
+        navLinks.forEach(link => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav.classList.remove("active");
+            body.classList.remove("menu-open");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
